@@ -1,0 +1,14 @@
+[
+  {
+    "Capability": "Associate",
+    "SubCategory": "Core Skills",
+    "Skill": "Communication",
+    "SkillID": 1
+  },
+  {
+    "Capability": "Associate",
+    "SubCategory": "Core Skills",
+    "Skill": "Organisation Skills",
+    "SkillID": 2
+  }
+]

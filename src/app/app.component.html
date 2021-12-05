@@ -1,0 +1,15 @@
+<form 
+  *ngIf="capabilityForm"
+  [formGroup]="capabilityForm">
+  <div formArrayName="capabilities">
+    <div *ngFor="let capability of capabilityForm.controls['capabilities'].controls; let i = index">
+      <div [formGroupName]="i">
+        <input type="text" formControlName="capability">
+        <input type="text" formControlName="subCategory">
+        <input type="text" formControlName="skill">
+        <input type="text" formControlName="skillId">
+        <button (click)="enableSection(i, capability.disabled)">{{ capability.disabled ? 'Edit': 'Save' }}</button>
+      </div>
+    </div>
+  </div>
+</form>
